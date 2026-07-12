@@ -18,7 +18,7 @@ You can:
   - Conditional rendering
   - Props
   - JSX
-- React-Router-DOM\
+- React-Router-DOM
   - NavLink, Link
   - Navigate
   - RouterProvider
@@ -34,3 +34,6 @@ You can:
 [https://whateverrpl.github.io/ReactRouterMiniShop/]
 
 # Screenshots
+
+<img width="1919" height="966" alt="opera_QbJA6II8b0" src="https://github.com/user-attachments/assets/90685e5a-2d4e-4290-9c58-1c20396c068a" />
+
