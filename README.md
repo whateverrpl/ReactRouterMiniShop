@@ -28,6 +28,7 @@ You can:
   - Hooks useSearchParams()
   - Hoooks useLocation()
   - Hooks useNavigate()
+- Tailwind.css
 
 # Live link
 
