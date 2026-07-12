@@ -1,4 +1,8 @@
-import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -22,72 +26,9 @@ const router = createBrowserRouter([
       { path: "category/:categoryId", element: <Category /> },
       { path: "product/:productId", element: <ProductDetails /> },
       { path: "*", element: <NotFound /> },
-      // { path: "*", element: <Navigate to="/" /> },
     ],
   },
 ]);
-
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: (
-//       <>
-//         <Header />
-//         <Home />
-//         <Footer />
-//       </>
-//     ),
-//   },
-//   {
-//     path: "about",
-//     element: (
-//       <>
-//         <Header />
-//         <About />
-//         <Footer />
-//       </>
-//     ),
-//   },
-//   {
-//     path: "cart",
-//     element: (
-//       <>
-//         <Header /> <Cart />
-//         <Footer />
-//       </>
-//     ),
-//   },
-//   {
-//     path: "categories",
-//     element: (
-//       <>
-//         <Header />
-//         <Categories />
-//         <Footer />
-//       </>
-//     ),
-//   },
-//   {
-//     path: "product",
-//     element: (
-//       <>
-//         <Header />
-//         <ProductDetails />
-//         <Footer />
-//       </>
-//     ),
-//   },
-//   {
-//     path: "*",
-//     element: (
-//       <>
-//         <Header />
-//         <NotFound />
-//         <Footer />
-//       </>
-//     ),
-//   },
-// ]);
 
 function App() {
   return <RouterProvider router={router} />;

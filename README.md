@@ -1,8 +1,34 @@
-# React + Vite
+# Description
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React-router-mini-shop
+You can:
 
-Currently, two official plugins are available:
+- Option to filter prices on categories page
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Technologies i used
+
+- HTML
+- CSS
+- Java Script
+- Vite
+- React.js
+  - Components
+  - Hooks useState()
+  - Hooks useEffect()
+  - Conditional rendering
+  - Props
+  - JSX
+- React-Router-DOM\
+  - NavLink, Link
+  - Navigate
+  - RouterProvider
+
+  - Main map for pages - createBrowserRouter()
+  - Hooks useParams()
+  - Hooks useSearchParams()
+  - Hoooks useLocation()
+  - Hooks useNavigate()
+
+# Live link
+
+# Screenshots
