@@ -1,0 +1,38 @@
+import { Link, useLocation } from "react-router-dom";
+
+import { categories } from "../data/data";
+
+function Home() {
+  const location = useLocation();
+  console.log(location);
+
+  return (
+    <div className="py-10 sm:py-16">
+      <h1 className="mb-8 text-2xl font-semibold text-center text-slate-900">
+        Categories
+      </h1>
+      <ul className="grid grid-cols-5">
+        {categories.map((category) => (
+          <li key={category.id} className="mx-auto w-60">
+            <Link
+              className="relative flex flex-col items-center justify-center group"
+              to={`/category/${category.name}`}
+            >
+              <span className="absolute z-10 text-xl font-semibold text-white transition-all ease-out group-hover:text-2xl ">
+                {category.name}
+              </span>
+              <img
+                className="rounded-md"
+                src={category.img}
+                alt={category.name}
+              />
+              <div className="absolute inset-0 bg-gray-900 rounded-md opacity-40"></div>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default Home;
