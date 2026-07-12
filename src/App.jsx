@@ -12,21 +12,26 @@ import ProductDetails from "./pages/ProductDetails";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/Layout";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: "old-home", element: <Navigate to="/" /> },
+        { path: "about", element: <About /> },
+        { path: "cart", element: <Cart /> },
+        { path: "category/:categoryId", element: <Category /> },
+        { path: "product/:productId", element: <ProductDetails /> },
+        { path: "*", element: <NotFound /> },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <Layout />,
-    children: [
-      { index: true, element: <Home /> },
-      { path: "old-home", element: <Navigate to={"/"} /> },
-      { path: "about", element: <About /> },
-      { path: "cart", element: <Cart /> },
-      { path: "category/:categoryId", element: <Category /> },
-      { path: "product/:productId", element: <ProductDetails /> },
-      { path: "*", element: <NotFound /> },
-    ],
+    basename: "/ReactRouterMiniShop",
   },
-]);
+);
 
 function App() {
   return <RouterProvider router={router} />;

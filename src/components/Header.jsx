@@ -3,7 +3,11 @@ import NavLinkMenu from "../UI/NavLinkMenu";
 function Header() {
   return (
     <header className="flex items-center justify-between px-5 py-8 bg-blue-200 shadow-md">
-      <img className="h-6" src="/logo.svg" alt="logo" />
+      <img
+        className="h-6"
+        src={`${import.meta.env.BASE_URL}logo.svg`}
+        alt="logo"
+      />
       <nav>
         <ul className="flex gap-x-14">
           <li>
