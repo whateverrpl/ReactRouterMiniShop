@@ -1,6 +1,6 @@
 import { categories } from "../data/data";
 
-import CategoryItem from "../components/common/CategoryItem";
+import CategoryItem from "../components/home/CategoryItem";
 
 function Home() {
   return (

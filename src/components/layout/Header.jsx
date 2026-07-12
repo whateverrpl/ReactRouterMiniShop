@@ -1,4 +1,4 @@
-import NavLinkMenu from "../UI/NavLinkMenu";
+import NavLinkMenu from "../common/NavLinkMenu";
 
 function Header() {
   return (
