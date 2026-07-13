@@ -36,5 +36,6 @@ You can:
 
 # Screenshots
 
-<img width="1919" height="966" alt="opera_QbJA6II8b0" src="https://github.com/user-attachments/assets/90685e5a-2d4e-4290-9c58-1c20396c068a" />
+<img width="1919" height="966" alt="opera_4LfiaWqoyI" src="https://github.com/user-attachments/assets/905e8261-9c8c-4137-8851-cf30eda62504" />
+
 
