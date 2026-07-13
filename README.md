@@ -1,9 +1,5 @@
 # Description
-
-React-router-mini-shop
-You can:
-
-- Option to filter prices on categories page
+My first (SPA) App with React, Tailwind, React Router
 
 # Technologies i used
 
