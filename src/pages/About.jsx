@@ -8,7 +8,7 @@ import AboutTitles from "../components/about/AboutTitles";
 
 function About() {
   return (
-    <div className="prose">
+    <div className="px-10 py-10 mx-auto prose ">
       <AboutTitles />
       <AboutParagraphs />
       <AboutLists />

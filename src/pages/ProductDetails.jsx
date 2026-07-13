@@ -11,7 +11,7 @@ function ProductDetails() {
   console.log(product);
 
   return (
-    <div className="px-6 py-10">
+    <div className="px-6 py-20">
       {product ? (
         <>
           <h1 className="mb-6 text-3xl font-semibold text-center">

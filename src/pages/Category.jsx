@@ -21,7 +21,7 @@ function Category() {
   }
 
   return (
-    <div className="px-6 py-10">
+    <div className="px-6 pt-12 pb-40">
       <h1 className="mb-6 text-3xl font-semibold text-center">
         Category {categoryId}
       </h1>
@@ -29,7 +29,7 @@ function Category() {
         value={searchParams.get("maxPrice") || ""}
         onChange={handleChange}
       />
-      <ul className="grid grid-cols-3 gap-4 px-5">
+      <ul className="grid grid-cols-4 px-5 pt-10">
         {currentCategoryArray.map((product) => (
           <CategoryProduct
             key={product.id}
