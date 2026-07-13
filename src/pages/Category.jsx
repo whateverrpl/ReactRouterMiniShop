@@ -1,17 +1,11 @@
-import {
-  Link,
-  useLocation,
-  useParams,
-  useSearchParams,
-} from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
 import { products } from "../data/data";
+import CategoryProduct from "../components/category/CategoryProduct";
+import CategoryMaxPriceFilter from "../components/category/CategoryMaxPriceFilter";
 
 function Category() {
   const { categoryId } = useParams();
   const [searchParams, setSearchParams] = useSearchParams();
-
-  const location = useLocation();
-  console.log(location);
 
   const maxPrice = searchParams.get("maxPrice")
     ? Number(searchParams.get("maxPrice"))
@@ -31,46 +25,21 @@ function Category() {
       <h1 className="mb-6 text-3xl font-semibold text-center">
         Category {categoryId}
       </h1>
-      <div className="mb-4">
-        <label
-          className="block mb-2 text-sm font-medium text-gray-700"
-          htmlFor="maxPrice"
-        >
-          Max Price{" "}
-        </label>
-        <input
-          className="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-          type="number"
-          id="maxPrice"
-          placeholder="Enter max price"
-          value={searchParams.get("maxPrice") || ""}
-          onChange={handleChange}
-        />
-      </div>
+      <CategoryMaxPriceFilter
+        value={searchParams.get("maxPrice") || ""}
+        onChange={handleChange}
+      />
       <ul className="grid grid-cols-3 gap-4 px-5">
         {currentCategoryArray.map((product) => (
-          <li
-            className="relative flex flex-col items-center justify-center mx-auto group w-60"
-            key={product.name}
-          >
-            <Link
-              className="relative flex flex-col items-center justify-center group"
-              to={`/product/${product.id}`}
-            >
-              <span className="absolute z-10 font-semibold text-center text-white transition-all ease-out text-1xl group-hover:text-2xl">
-                {product.name} <br /> {product.price}$
-              </span>
-
-              <img
-                className="rounded-md"
-                src={product.img}
-                alt={product.name}
-              />
-              <div className="absolute inset-0 bg-gray-900 rounded-md opacity-40"></div>
-            </Link>
-          </li>
+          <CategoryProduct
+            key={product.id}
+            name={product.name}
+            id={product.id}
+            price={product.price}
+            img={product.img}
+          />
         ))}
-      </ul>{" "}
+      </ul>
     </div>
   );
 }

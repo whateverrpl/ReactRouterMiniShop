@@ -1,5 +1,4 @@
 import { categories } from "../data/data";
-
 import CategoryItem from "../components/home/CategoryItem";
 
 function Home() {
