@@ -2,7 +2,6 @@
 My first (SPA) App with React, Tailwind, React Router
 
 # Technologies i used
-
 - HTML
 - CSS
 - Java Script
@@ -27,11 +26,9 @@ My first (SPA) App with React, Tailwind, React Router
 - Tailwind.css
 
 # Live link
-
 [https://whateverrpl.github.io/ReactRouterMiniShop/]
 
 # Screenshots
-
 <img width="1919" height="966" alt="opera_4LfiaWqoyI" src="https://github.com/user-attachments/assets/905e8261-9c8c-4137-8851-cf30eda62504" />
 
 
